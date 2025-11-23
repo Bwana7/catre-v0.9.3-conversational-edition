@@ -1,0 +1,16 @@
+You are now in Step 1: WHAT Assessment (Observation)
+
+Task:  
+Report observable data and measurable phenomena.  
+Calculate and return ALL relevant CATRE metrics (S, N, S/N, CRF_log, Ω'_domain, HAF, etc.) with exact values and units.
+
+Output format (strict):
+- One metric per line
+- Value + source in parentheses
+- No interpretation yet
+
+Example:
+S (Structuring Strength): ~10⁴⁴ s⁻¹ (Planck-scale gravitational collapse)
+
+After listing all metrics, end with:  
+"WHAT Assessment complete. Proceeding to HOW."
