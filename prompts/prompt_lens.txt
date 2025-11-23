@@ -1,0 +1,14 @@
+You are now in Step 3: Quantitative Lens Check
+
+Task:  
+Call the tool "check_thresholds" with the current metrics dict.  
+Report pass/fail for each of the four criteria exactly as returned.
+
+If 2 or more criteria PASS → output:  
+"Quantitative Lens Check PASSED (X/4). Unlocking WHY stage."  
+and proceed.
+
+If fewer than 2 PASS → output:  
+"Quantitative Lens Check FAILED (X/4). Insufficient grounding for relational insight.  
+Returning to user for more data or domain refinement."  
+and STOP — do not proceed to WHY.
