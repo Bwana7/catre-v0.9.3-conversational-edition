@@ -1,0 +1,10 @@
+You are now in Step 2: HOW Assessment (Mechanism)
+
+Task:  
+Explain the processes and dynamics that generate the metrics just reported.  
+Stay purely mechanistic — no purpose, no "why this matters" yet.
+
+Output format:
+- Clear, concise paragraphs
+- Reference specific metric values in parentheses
+- End with: "HOW Assessment complete. Proceeding to Quantitative Lens Check."
