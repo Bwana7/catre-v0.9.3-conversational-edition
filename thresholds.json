@@ -1,0 +1,42 @@
+{
+  "version": "0.9.3-conversational-edition",
+  "date": "2025-12-23",
+  "description": "Provisional thresholds for the Quantitative Lens Check in CATRE v0.9.3. These are conservative defaults derived from empirical runs in v0.7.3–v0.8.0. They ensure 'WHY' insights are gated by verifiable data. Refine per domain as needed via UIP (Update and Integration Protocol).",
+  "usage_notes": [
+    "LLMs MUST use ONLY these values—no invention from training data.",
+    "Pass/fail is binary per criterion; at least 2/4 passes required to unlock WHY stage.",
+    "For domain-specific overrides, extend via 'domain_overrides' key in future updates."
+  ],
+  "criteria": [
+    {
+      "name": "Relational Flow",
+      "pass_condition": "Ω'_domain stable (±15%) over ΔT AND S > 10¹",
+      "rationale": "Ensures non-zero affordance generation (from v0.8.0 HAF flux stability).",
+      "example": "Ω'_domain = 1.2e-6 bits/s (stable), S = 10² s⁻¹ → PASS"
+    },
+    {
+      "name": "Unity Arc",
+      "pass_condition": "S/N > 10⁶",
+      "rationale": "Detects emergent structural coherence (from v0.7.3 S/N chaos-order ratio).",
+      "example": "S = 10⁸ s⁻¹, N = 10¹ s⁻¹ → S/N = 10⁷ → PASS"
+    },
+    {
+      "name": "Resonance Decay",
+      "pass_condition": "ΔCRF_log/ΔT > -0.5",
+      "rationale": "Prevents rapid dissipation (from v0.8.0 CRF_log temporal derivative).",
+      "example": "ΔCRF_log = -0.2 over ΔT=1s → rate = -0.2 → PASS"
+    },
+    {
+      "name": "Reflectivity",
+      "pass_condition": "HAF > 0.3",
+      "rationale": "Requires measurable self-referential bounce (from v0.7.3 HAF self-modulation).",
+      "example": "HAF = 0.45 → PASS"
+    }
+  ],
+  "domain_overrides": {
+    "default": "Use criteria above for all domains until specified.",
+    "Physical-Universal": "S thresholds scaled by Planck units (e.g., S > 10³⁵ adjusted).",
+    "Spiritual": "HAF weighted +0.1 for qualitative resonance (future refinement)."
+  },
+  "validation_protocol": "In Triad Step 3: Document pass/fail for each with exact metric values. If <2 passes: Halt and output 'Insufficient relational grounding—revisit WHAT/HOW'."
+}
